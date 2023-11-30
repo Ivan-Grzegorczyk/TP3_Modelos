@@ -1,5 +1,3 @@
-# TP3_Modelos
-Trabajo práctico 3 de la materia Modelos y Optimización 1.
 # Trabajo Práctico 3 Modelos y Optimización
 
 ### Eliminación de subtours
@@ -8,7 +6,7 @@ Para el MTZ al igual que vimos en las clases teóricas se usan un `u[i]` y un `u
 
 ![Graphic MTZ](images/TSP_MTZ_1.png)
 
-Para el otro modelo se usa un conjunto de subtours conocidos, cada uno representado por un tamaño y una secuencia de ciudades. Esta restricción garantiza que, para cada subtour conocido, no más de `s.size - 1` arcos pueden estar en la solución. De esta forma se eliminan todos los subtours. Tiempo total de corrida: 22 segundos y 95 centésimas. Mejor solución: 5249.622889689.
+Para el otro modelo se usa un conjunto de subtours conocidos, cada uno representado por un tamaño y una secuencia de ciudades. Se agrega entonces una restricción que garantiza que, para cada subtour conocido, no más de `s.size - 1` aristas pueden estar en la solución. De esta forma se eliminan todos los subtours. Tiempo total de corrida: 22 segundos y 95 centésimas. Mejor solución: 5249.622889689.
 
 ¿Por qué el modelo MTZ tiene todos los `Xij` mientras que el otro solo los tiene cuando `i < j`?
 
